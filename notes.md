@@ -12,7 +12,8 @@ Its a universal language that every one handling the software and the domain exp
 
  Sample:
   the Devs create an entity (User) but the domain experts can user many other nomenclatures like: client, service provider,
-  supplier, barman, etc.., so keep the code close to the language used with the domain experts.
+  supplier, barman, etc.., so keep the code close to the language used with the domain experts. The entities and use-cases
+  names should not depend on the any tool or language used in the project.
 
 - Aggregates
 - Value Objects
