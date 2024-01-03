@@ -11,7 +11,8 @@
 Its a universal language that every one handling the software and the domain experts can use evenly and efficiently.
 
  Sample:
-  the Devs create an entity (User) but the domain experts can user many other nomenclatures like: client, service provider, supplier, barman, etc...
+  the Devs create an entity (User) but the domain experts can user many other nomenclatures like: client, service provider,
+  supplier, barman, etc.., so keep the code close to the language used with the domain experts.
 
 - Aggregates
 - Value Objects
