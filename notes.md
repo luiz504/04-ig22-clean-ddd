@@ -17,6 +17,7 @@ Its a universal language that every one handling the software and the domain exp
 
 - Aggregates
 - Value Objects
+    Its the specificities/validations/Business rules applied to the entities properties.
 - Domain Events
 - Subdomain (Bounded Contexts)
 - Entities
