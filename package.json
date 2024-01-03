@@ -1,0 +1,16 @@
+{
+  "name": "04-ig22-clean-ddd",
+  "version": "1.0.0",
+  "description": "Welcome to Ignite Forum, a hands-on study project aimed at building a forum from the ground up. This initiative is designed to provide practical experience in implementing principles such as Clean Code and Domain-Driven Design (DDD).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
