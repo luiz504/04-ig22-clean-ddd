@@ -9,11 +9,7 @@ interface AnswerQuestionUseCaseRequest {
 }
 
 export class AnswerQuestionUseCase {
-  private answersRepository: AnswersRepository
-
-  constructor(answerRepository: AnswersRepository) {
-    this.answersRepository = answerRepository
-  }
+  constructor(private answersRepository: AnswersRepository) {}
 
   async execute({
     instructorId,
