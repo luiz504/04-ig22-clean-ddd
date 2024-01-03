@@ -15,7 +15,6 @@ describe('Get Question by Slug Use Case', () => {
   it('should be get a question by Slug', async () => {
     // Prepare
     const newQuestion = makeQuestion({ slug: Slug.create('example-question') })
-    console.log('dd', newQuestion)
 
     await inMemoryQuestionsRepository.create(newQuestion)
 
