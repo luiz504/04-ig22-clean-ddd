@@ -4,7 +4,6 @@ interface DeleteQuestionUseCaseRequest {
   questionId: string
   authorId: string
 }
-// interface DeleteQuestionUseCaseResponse {}
 
 export class DeleteQuestionUseCase {
   constructor(private questionRepository: QuestionsRepository) {}
@@ -24,7 +23,5 @@ export class DeleteQuestionUseCase {
     }
 
     await this.questionRepository.delete(question)
-
-    // return {}
   }
 }
