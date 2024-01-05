@@ -2,7 +2,7 @@ import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questio
 
 import { makeQuestion } from 'test/factories/make-question'
 
-import { DeleteQuestionUseCase } from './delete-question'
+import { DeleteQuestionUseCase } from '../question/delete-question'
 import { UniqueEntityID } from '~/core/entities/unique-entity-id'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository

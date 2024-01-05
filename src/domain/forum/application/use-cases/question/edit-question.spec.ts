@@ -3,7 +3,7 @@ import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questio
 import { makeQuestion } from 'test/factories/make-question'
 
 import { UniqueEntityID } from '~/core/entities/unique-entity-id'
-import { EditQuestionUseCase } from './edit-question'
+import { EditQuestionUseCase } from '../question/edit-question'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 // SUT: System under test

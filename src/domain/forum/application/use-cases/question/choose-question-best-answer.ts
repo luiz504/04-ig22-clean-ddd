@@ -1,7 +1,6 @@
-import { UniqueEntityID } from '~/core/entities/unique-entity-id'
-import { QuestionsRepository } from '../repositories/question-repository'
-import { Question } from '../../enterprise/entities/question'
-import { AnswersRepository } from '../repositories/answers-repository'
+import { QuestionsRepository } from '../../repositories/question-repository'
+import { Question } from '../../../enterprise/entities/question'
+import { AnswersRepository } from '../../repositories/answers-repository'
 
 interface ChooseQuestionBestAnswerUseCaseRequest {
   authorId: string

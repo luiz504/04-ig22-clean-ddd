@@ -1,5 +1,5 @@
-import { QuestionsRepository } from '../repositories/question-repository'
-import { Question } from '../../enterprise/entities/question'
+import { QuestionsRepository } from '../../repositories/question-repository'
+import { Question } from '../../../enterprise/entities/question'
 
 interface FetchRecentQuestionsUseCaseRequest {
   page: number

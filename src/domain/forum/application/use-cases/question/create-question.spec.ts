@@ -1,6 +1,6 @@
 import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
 
-import { CreateQuestionUseCase } from './create-question'
+import { CreateQuestionUseCase } from '../question/create-question'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 // SUT: System under test

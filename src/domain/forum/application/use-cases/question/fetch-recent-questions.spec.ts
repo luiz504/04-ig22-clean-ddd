@@ -2,7 +2,7 @@ import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questio
 
 import { makeQuestion } from 'test/factories/make-question'
 
-import { FetchRecentQuestionsUseCase } from './fetch-recent-questions'
+import { FetchRecentQuestionsUseCase } from '../question/fetch-recent-questions'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
 // SUT: System under test

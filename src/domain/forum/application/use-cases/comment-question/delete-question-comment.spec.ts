@@ -1,8 +1,6 @@
-import { makeQuestion } from 'test/factories/make-question'
-
 import { UniqueEntityID } from '~/core/entities/unique-entity-id'
 import { InMemoryQuestionCommentsRepository } from 'test/repositories/in-memory-question-comments-repository'
-import { DeleteQuestionCommentsUseCase } from './delete-question-comment'
+import { DeleteQuestionCommentsUseCase } from '../comment-question/delete-question-comment'
 import { makeQuestionComment } from 'test/factories/make-question-comment'
 
 let inMemoryQuestionCommentsRepository: InMemoryQuestionCommentsRepository
