@@ -25,11 +25,11 @@ describe('Fetch Answers By AnswersId Use Case', () => {
     )
 
     // Act
-    const { answers } = await sut.execute({
+    const result = await sut.execute({
       questionId: 'some-question-id',
       page: 1,
     })
-
+    const answers = result.value?.answers
     // Assert
     expect(answers).toHaveLength(3)
   })
@@ -44,7 +44,8 @@ describe('Fetch Answers By AnswersId Use Case', () => {
     }
 
     // Act
-    const { answers } = await sut.execute({ questionId, page: 2 })
+    const result = await sut.execute({ questionId, page: 2 })
+    const answers = result.value?.answers
 
     // Assert
     expect(answers).toHaveLength(2)

@@ -26,13 +26,13 @@ describe('Fetch QuestionComments By QuestionCommentsId Use Case', () => {
     )
 
     // Act
-    const { questionComments } = await sut.execute({
+    const result = await sut.execute({
       questionId: 'some-question-id',
       page: 1,
     })
 
     // Assert
-    expect(questionComments).toHaveLength(3)
+    expect(result.value?.questionComments).toHaveLength(3)
   })
   it('should be to fetch question paginated question comments', async () => {
     // Prepare
@@ -45,9 +45,9 @@ describe('Fetch QuestionComments By QuestionCommentsId Use Case', () => {
     }
 
     // Act
-    const { questionComments } = await sut.execute({ questionId, page: 2 })
+    const result = await sut.execute({ questionId, page: 2 })
 
     // Assert
-    expect(questionComments).toHaveLength(2)
+    expect(result.value?.questionComments).toHaveLength(2)
   })
 })

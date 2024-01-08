@@ -15,15 +15,14 @@ describe('Create Answer Question Use Case', () => {
     }
 
     // Act
-    const { answer } = await sut.execute({
+    const result = await sut.execute({
       instructorId: 'instructor-id',
       questionId: 'question-id',
       ...data,
     })
 
     // Assert
-    expect(answer.id).toBeTruthy()
-    expect(answer).toEqual(expect.objectContaining(data))
-    expect(inMemoryAnswerRepository.items[0].id).toEqual(answer.id)
+    expect(result.isRight()).toBe(true)
+    expect(inMemoryAnswerRepository.items[0]).toEqual(result.value?.answer)
   })
 })
