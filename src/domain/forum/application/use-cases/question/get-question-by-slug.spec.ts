@@ -1,5 +1,4 @@
 import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
-
 import { GetQuestionBySlugUseCase } from '../question/get-question-by-slug'
 import { makeQuestion } from 'test/factories/make-question'
 import { Slug } from '~/domain/forum/enterprise/entities/value-objects/slug'
@@ -19,12 +18,18 @@ describe('Get Question by Slug Use Case', () => {
     await inMemoryQuestionsRepository.create(newQuestion)
 
     // Act
-    const { question } = await sut.execute({
+    const result = await sut.execute({
       slug: 'example-question',
     })
 
     // Assert
-    expect(question.id).toBeTruthy()
-    expect(question.title).toEqual(newQuestion.title)
+    expect(result.isRight()).toBe(true)
+    const { question } = result.value as any //eslint-disable-line 
+
+    expect(result.value).toEqual(
+      expect.objectContaining({
+        question: expect.objectContaining({ title: newQuestion.title }),
+      }),
+    )
   })
 })

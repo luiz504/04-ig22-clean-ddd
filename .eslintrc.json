@@ -1,4 +1,7 @@
 {
   "extends": "@rocketseat/eslint-config/node",
-  "rules": { "no-console": "warn", "no-useless-constructor": "off" }
+  "rules": {
+    "no-console": "warn",
+    "no-useless-constructor": "off"
+  }
 }

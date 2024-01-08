@@ -25,11 +25,11 @@ describe('Fetch AnswerComments By AnswerCommentsId Use Case', () => {
     )
 
     // Act
-    const { answerComments } = await sut.execute({
+    const result = await sut.execute({
       answerId: 'some-answer-id',
       page: 1,
     })
-
+    const answerComments = result.value?.answerComments
     // Assert
     expect(answerComments).toHaveLength(3)
   })
@@ -44,7 +44,8 @@ describe('Fetch AnswerComments By AnswerCommentsId Use Case', () => {
     }
 
     // Act
-    const { answerComments } = await sut.execute({ answerId, page: 2 })
+    const result = await sut.execute({ answerId, page: 2 })
+    const answerComments = result.value?.answerComments
 
     // Assert
     expect(answerComments).toHaveLength(2)
