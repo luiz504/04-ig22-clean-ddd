@@ -1,5 +1,5 @@
 {
   "cSpell.language": "en,pt-BR",
-  "cSpell.words": ["bruce"],
+  "cSpell.words": ["bruce", "dayjs"],
   "typescript.preferences.importModuleSpecifier": "non-relative"
 }
