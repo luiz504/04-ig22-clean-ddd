@@ -2,8 +2,8 @@ import { Entity } from '~/core/entities/entity'
 import { UniqueEntityID } from '~/core/entities/unique-entity-id'
 
 interface AttachmentProps {
-  title: string
-  link: string
+  title: UniqueEntityID
+  link: UniqueEntityID
 }
 
 export class Attachment extends Entity<AttachmentProps> {
