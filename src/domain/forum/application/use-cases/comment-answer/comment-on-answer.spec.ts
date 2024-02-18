@@ -4,7 +4,7 @@ import { CommentOnAnswerUseCase } from '../comment-answer/comment-on-answer'
 import { makeAnswer } from 'test/factories/make-answer'
 import { InMemoryAnswerCommentsRepository } from 'test/repositories/in-memory-answer-comments-repository'
 import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
-import { ResourceNotFoundError } from '~/domain/forum/application/use-cases/errors/resource-not-found-error'
+import { ResourceNotFoundError } from '~/core/errors/resource-not-found-error'
 
 let inMemoryAnswersRepository: InMemoryAnswersRepository
 let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository

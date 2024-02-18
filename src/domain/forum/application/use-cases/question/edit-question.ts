@@ -1,7 +1,7 @@
-import { ResourceNotFoundError } from '~/domain/forum/application/use-cases/errors/resource-not-found-error'
+import { ResourceNotFoundError } from '~/core/errors/resource-not-found-error'
 
 import { Either, left, right } from '~/core/either'
-import { NotAllowedError } from '~/domain/forum/application/use-cases/errors/not-allowed-error'
+import { NotAllowedError } from '~/core/errors/not-allowed-error'
 import { Question } from '~/domain/forum/enterprise/entities/question'
 import { QuestionsRepository } from '~/domain/forum/application/repositories/question-repository'
 import { QuestionAttachmentList } from '~/domain/forum/enterprise/entities/question-attachment-list'

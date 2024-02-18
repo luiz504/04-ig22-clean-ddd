@@ -1,5 +1,5 @@
 import { UniqueEntityID } from '~/core/entities/unique-entity-id'
-import { NotAllowedError } from '~/domain/forum/application/use-cases/errors/not-allowed-error'
+import { NotAllowedError } from '~/core/errors/not-allowed-error'
 import { DeleteQuestionCommentsUseCase } from '~/domain/forum/application/use-cases/comment-question/delete-question-comment'
 
 import { InMemoryQuestionCommentsRepository } from 'test/repositories/in-memory-question-comments-repository'
